@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    /* height: 100vh;     */
+}
+
+/* FLEXBOX */
+
+/* 
+.container {
+    height: 50%;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-content: center ;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    flex-shrink: 0;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+}
+
+.item3 {
+    grid-area: 1 / 3 / 4 / 5;
+}
+
+
+
+
+
+/* GRID */
+
+/* .container {
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid black;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.item13 {
+    display: none;
+}
+
+.item6:hover {
+    grid-area: span 2 / span 2;
+    background-image: url(https://m.media-amazon.com/images/I/81EmQQDJwhL._AC_UF894,1000_QL80_.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item6:hover ~ .item13 {
+    display: flex;
+} */
+
+
+
+
+
